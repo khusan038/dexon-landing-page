@@ -2,6 +2,7 @@ import { MdArrowForward } from "react-icons/md";
 import Container from "../../../components/container";
 import { Paragraph, Title } from "../../../components/typography";
 import styled from "@emotion/styled";
+import clsx from "clsx";
 
 function ExampleProject() {
   return (
@@ -15,13 +16,15 @@ function ExampleProject() {
             "Distinctively supply exceptional services after uniquely integrate alternative markets rather emerging initiatives."
           }
         </Paragraph>
-        <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3  mt-[50px]">
+        <div className="grid grid-cols-1 gap-7 sm:!grid-cols-2 md:!grid-cols-3  mt-[50px]">
           {data.map((item, index) => (
             <StyledCard
               key={index}
-              className={`!justify-center group ${
-                item.span ? `col-span-${item.span}` : "col-span-1"
-              } `}
+              className={clsx(
+                "!justify-center",
+                "group",
+                item.span && `col-span-${`${item.span}`}`
+              )}
             >
               <img className="w-full rounded-xl" src={item.img} alt="" />
               <div className="hidden group-hover:block project-content">

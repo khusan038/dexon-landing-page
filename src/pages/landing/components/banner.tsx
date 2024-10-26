@@ -17,7 +17,7 @@ function Banner() {
       <Container className="grid grid-cols-1 gap-10 py-10 lg:grid-cols-2 pt-[100px]">
         <div className="flex flex-col justify-center">
           <div>
-            <Title className=" !text-3xl sm:!text-5xl md:!text-6xl !mb-2  !text-white whitespace-pre-line">
+            <Title className=" !text-4xl sm:!text-5xl md:!text-6xl !mb-2 !text-white whitespace-pre-line">
               Start Achieving {"\n"} Your Short Term{"\n"} SEO Goals
             </Title>
             <Paragraph

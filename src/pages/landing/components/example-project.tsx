@@ -3,6 +3,8 @@ import Container from "../../../components/container";
 import { Paragraph, Title } from "../../../components/typography";
 import styled from "@emotion/styled";
 import clsx from "clsx";
+import { Button } from "antd";
+import { buttonStyled } from "./banner";
 
 function ExampleProject() {
   return (
@@ -23,16 +25,26 @@ function ExampleProject() {
               className={clsx(
                 "!justify-center",
                 "group",
-                item.span && `col-span-${`${item.span}`}`
+                item.span && `col-span-1 sm:col-span-2`
               )}
             >
-              <img className="w-full rounded-xl" src={item.img} alt="" />
-              <div className="hidden group-hover:block project-content">
-                <Title level={3}>Campaign</Title>
-                <Title level={2} className="!mt-0 font-bold">
+              <img className="w-full h-full rounded-xl" src={item.img} alt="" />
+              {item.hoverContent}
+              <div
+                className={`transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100 project-content ${clsx(
+                  item.hoverTitle === false && "hidden"
+                )}`}
+              >
+                <Title className="!m-0 !text-3xl !font-light sm:!text-2xl md:text-xl lg:!text-3xl">
+                  Campaign
+                </Title>
+                <Title className="!mt-2  !text-4xl !font-semibold sm:!text-3xl md:!text-2xl lg:!text-4xl">
                   SEO Consulting
                 </Title>
-                <Paragraph className="flex justify-center mb-0 !text-[40px] text-opacity-10">
+                <Paragraph
+                  className="flex justify-center !mb-0 
+                 !text-[40px] text-opacity-10"
+                >
                   <MdArrowForward className="!rotate-45" />
                 </Paragraph>
               </div>
@@ -75,9 +87,10 @@ const StyledCard = styled.div`
   .project-content {
     position: absolute;
     z-index: 1;
-    top: 36%;
     left: 0;
     right: 0;
+    top: 50%; /* Vertikal markazlash uchun */
+    transform: translateY(-50%);
     text-align: center;
     transition: 0.5s;
   }
@@ -86,10 +99,22 @@ const StyledCard = styled.div`
 const data = [
   {
     img: "https://html.ditsolution.net/dexon/assets/images/resource/pr1.jpg",
-    span: 2,
+    span: true,
   },
   { img: "https://html.ditsolution.net/dexon/assets/images/resource/pr2.jpg" },
   { img: "https://html.ditsolution.net/dexon/assets/images/resource/pr3.jpg" },
   { img: "https://html.ditsolution.net/dexon/assets/images/resource/pr4.jpg" },
-  { img: "https://html.ditsolution.net/dexon/assets/images/resource/pr5.png" },
+  {
+    img: "https://html.ditsolution.net/dexon/assets/images/resource/pr5.png",
+    hoverTitle: false,
+    hoverContent: (
+      <>
+        <Button
+          className={`project-content mx-auto w-[120px] px-[5px]  inline-block ${buttonStyled}`}
+        >
+          Start Here
+        </Button>
+      </>
+    ),
+  },
 ];

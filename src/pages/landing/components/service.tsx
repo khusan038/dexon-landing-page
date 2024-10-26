@@ -12,7 +12,7 @@ function Service() {
     <div className="bg-[#101210]">
       <Container className="grid grid-cols-12 py-[100px] gap-7">
         <div className="col-span-12 lg:col-span-5">
-          <Title level={3} className="!text-[#bbf838] !mb-6">
+          <Title level={3} className="!text-mainColor !mb-6">
             Services
           </Title>
           <Title className="!text-white !text-3xl sm:!text-4xl !mt-0 !mb-2">
@@ -28,7 +28,7 @@ function Service() {
             pellentesque Vulputate ut aliquam, consectetur turpis
           </Paragraph>
           <Button
-            className="h-[80px] !min-w-[80px] aspect-square text-5xl bg-transparent  hover:!text-yellow-500 hover:!border-yellow-400  border-b-2 hover:!bg-transparent  text-white text-opacity-10 border-opacity-10 border-white border-solid "
+            className="h-[80px] !min-w-[80px] aspect-square text-5xl bg-transparent  hover:!text-mainColor hover:!border-mainColor  border-b-2 hover:!bg-transparent  text-white text-opacity-10 border-opacity-10 border-white border-solid "
             shape="circle"
           >
             <MdArrowForward className="!-rotate-45" />

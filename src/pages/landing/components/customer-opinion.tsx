@@ -1,9 +1,9 @@
-import { Rate, Space } from "antd";
+import { Button, Rate, Space } from "antd";
 import backgroundImg from "../../../../public/images/backgournd-customer-opinion.jpg";
 import Container from "../../../components/container";
 import { Paragraph, Title } from "../../../components/typography";
 import { StyledCard } from "../../../components/styled-card";
-import { StyledButton } from "../../../components/styled-button";
+import { buttonStyled } from "./banner";
 function CustomerOpinion() {
   return (
     <div
@@ -15,7 +15,7 @@ function CustomerOpinion() {
       }}
     >
       <Container className="py-[100px]">
-        <Title className="!text-[#bbf838] !text-xl !m-0">Testimonial</Title>
+        <Title className="!text-mainColor !text-xl !m-0">Testimonial</Title>
         <Title className="!text-white !text-2xl md:!text-4xl font-bold  whitespace-pre-line !mt-2 ">
           {"What Say Our Customers \n About Dexon"}
         </Title>
@@ -29,14 +29,14 @@ function CustomerOpinion() {
                 <Space size={"large"}>
                   <img
                     src="https://html.ditsolution.net/dexon/assets/images/resource/testi.png"
-                    className="rounded-xl w-[80px] h-[80px]"
+                    className="rounded-xl min-w-[80px] min-h-[80px]"
                     alt="notFound"
                   />
                   <div className="flex flex-col justify-center">
-                    <Title level={3} className="!m-0 !mb-2 !text-white">
+                    <Title className="!m-0 !mb-2 !text-[16px] sm:!text-[22px]  !text-white">
                       {item.userName}
                     </Title>
-                    <Paragraph className="!text-[18px] !m-0 !text-[#7b7b7b]">
+                    <Paragraph className="!text-[14px] sm:!text-[18px] !m-0 !text-[#7b7b7b]">
                       {item.userJob}
                     </Paragraph>
                   </div>
@@ -47,7 +47,7 @@ function CustomerOpinion() {
                 />
               </div>
 
-              <Paragraph className="!text-[18px] !text-white">
+              <Paragraph className=" !text-[16px] sm:!text-[18px] !text-white">
                 {item.opinion}
               </Paragraph>
             </StyledCard>
@@ -57,7 +57,7 @@ function CustomerOpinion() {
           {`Are you excited to start Next \n SEO Campaign?`}
         </Title>
         <div className="flex justify-center">
-          <StyledButton className="">Get Startee</StyledButton>
+          <Button className={buttonStyled}>Get Startee</Button>
         </div>
       </Container>
     </div>

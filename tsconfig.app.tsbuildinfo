@@ -1,0 +1,25 @@
+{
+  "root": [
+    "./src/app.tsx",
+    "./src/main.tsx",
+    "./src/vite-env.d.ts",
+    "./src/components/container.tsx",
+    "./src/components/styled-button.tsx",
+    "./src/components/styled-card.tsx",
+    "./src/components/typography.tsx",
+    "./src/pages/landing/index.tsx",
+    "./src/pages/landing/components/about-us.tsx",
+    "./src/pages/landing/components/banner.tsx",
+    "./src/pages/landing/components/customer-opinion.tsx",
+    "./src/pages/landing/components/example-project.tsx",
+    "./src/pages/landing/components/footer.tsx",
+    "./src/pages/landing/components/header.tsx",
+    "./src/pages/landing/components/index.tsx",
+    "./src/pages/landing/components/infinite-scroll.tsx",
+    "./src/pages/landing/components/offers.tsx",
+    "./src/pages/landing/components/service.tsx",
+    "./src/store/store.ts",
+    "./src/types/types.ts"
+  ],
+  "version": "5.6.2"
+}

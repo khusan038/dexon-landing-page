@@ -17,7 +17,7 @@ function AboutUs() {
     >
       <Container className="py-[120px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div>
-          <Title className="!text-[#bbf838] !text-xl !m-0">About Us</Title>
+          <Title className="!text-mainColor !text-xl !m-0">About Us</Title>
           <Title className="!text-white !text-2xl md:!text-4xl font-bold  whitespace-pre-line !mt-2 ">
             {"Discover the Most Expertise \n of Our SEO Agency"}
           </Title>

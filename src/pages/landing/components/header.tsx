@@ -1,10 +1,11 @@
-import { Button, Drawer } from "antd";
+import { Drawer } from "antd";
 import Container from "../../../components/container";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { FaBars } from "react-icons/fa";
 
 import { Paragraph } from "../../../components/typography";
+import { StyledButton } from "../../../components/styled-button";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +39,7 @@ function Header() {
       <header
         className={`border-b-[1px] border-solid border-white border-opacity-10 fixed w-full top-0 z-50 transition-colors duration-400 ease-in-out ${clsx(
           {
-            "bg-[#101210]": isScrolled,
+            "bg-bgBlack": isScrolled,
           }
         )}`}
       >
@@ -48,7 +49,7 @@ function Header() {
             src="https://html.ditsolution.net/dexon/assets/images/logo2.png"
             alt="logo"
           />
-          <div className="hidden md:flex gap-7 md:">
+          <div className="hidden lg:flex gap-7">
             {menu.map((item, index) => (
               <Paragraph
                 key={index}
@@ -58,15 +59,12 @@ function Header() {
               </Paragraph>
             ))}
           </div>
-          <Button
-            size="large"
-            className="bg-transparent border-2 md:block hidden text-white hover:!bg-transparent hover:!border-yellow-200 hover:!text-yellow-500 !rounded-sm border-white border-solid hover:!bg-white hover:bg-opacity-10 border-opacity-10 "
-          >
+          <StyledButton className="!hidden lg:!block">
             exampleButton
-          </Button>
+          </StyledButton>
           <Paragraph
             onClick={showDrawer}
-            className="bloack md:hidden text-[20px] !m-0 cursor-pointer !text-white"
+            className="bloack lg:hidden text-[20px] !m-0 cursor-pointer !text-white"
           >
             <FaBars />
           </Paragraph>

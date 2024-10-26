@@ -3,6 +3,7 @@ import Container from "../../../components/container";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { FaBars } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
 import { Paragraph } from "../../../components/typography";
 import { StyledButton } from "../../../components/styled-button";
@@ -20,7 +21,7 @@ function Header() {
   };
 
   const handleScroll = () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 30) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -43,7 +44,7 @@ function Header() {
           }
         )}`}
       >
-        <Container className="flex items-center justify-between py-5">
+        <Container className="flex items-center justify-between py-4 md:py-5">
           <img
             className="mb-5 translate-y-2"
             src="https://html.ditsolution.net/dexon/assets/images/logo2.png"
@@ -64,27 +65,37 @@ function Header() {
           </StyledButton>
           <Paragraph
             onClick={showDrawer}
-            className="bloack lg:hidden text-[20px] !m-0 cursor-pointer !text-white"
+            className="bloack lg:hidden text-[20px] !m-0 pe-2 cursor-pointer !text-white"
           >
             <FaBars />
           </Paragraph>
         </Container>
       </header>
       <Drawer
-        className="!bg-dark"
         title="Menu"
         width={300}
         onClose={onClose}
         open={open}
+        style={{ backgroundColor: "#000", color: "#fff" }}
+        closeIcon={
+          <span style={{ color: "white", fontSize: "20px", marginTop: "3px" }}>
+            <IoClose />
+          </span>
+        }
       >
-        {menu.map((item, index) => (
-          <Paragraph
-            key={index}
-            className="capitalize !m-0 text-[18px] text-white cursor-pointer "
-          >
-            {item.title}
-          </Paragraph>
-        ))}
+        <div className="flex flex-col justify-between h-full">
+          <div>
+            {menu.map((item, index) => (
+              <Paragraph
+                key={index}
+                className="capitalize !m-0 !mb-4 text-[18px] text-white cursor-pointer "
+              >
+                {item.title}
+              </Paragraph>
+            ))}
+          </div>
+          <StyledButton className="">exampleButton</StyledButton>
+        </div>
       </Drawer>
     </>
   );

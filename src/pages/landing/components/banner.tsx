@@ -3,6 +3,7 @@ import { Paragraph, Title } from "../../../components/typography";
 import image from "../../../../public/images/banner.png";
 import backgraound from "../../../../public/images/background-banner.jpg";
 import { Button } from "antd";
+import ScrollIndicator from "../../../components/scroll-progress";
 
 function Banner() {
   return (
@@ -35,6 +36,7 @@ function Banner() {
           <img src={image} alt="" />
         </div>
       </Container>
+      <ScrollIndicator />
     </div>
   );
 }

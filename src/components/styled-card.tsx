@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const StyledCard = styled.div`
   position: relative;
- 
+
   ::after {
     position: absolute;
     content: "";

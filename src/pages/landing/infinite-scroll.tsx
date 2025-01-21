@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "../../../styles/infinite-scoll.css";
-import Container from "../../../components/container";
-import { Paragraph } from "../../../components/typography";
+import "@styles/infinite-scoll.css";
+import Container from "@components/container";
+import { Paragraph } from "@components/typography";
 
 const InfiniteScoll: React.FC = () => {
   useEffect(() => {

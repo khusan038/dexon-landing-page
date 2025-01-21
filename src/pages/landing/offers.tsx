@@ -1,13 +1,13 @@
-import Container from "../../../components/container";
-import { Paragraph, Title } from "../../../components/typography";
+import Container from "@components/container";
+import { Paragraph, Title } from "@components/typography";
 import styled from "@emotion/styled";
-import offer1Img from "../../../../public/images/offer-1.png";
-import offer2Img from "../../../../public/images/offer-2.png";
-import offer3Img from "../../../../public/images/offer-3.png";
-import offer4Img from "../../../../public/images/offer-4.png";
-import offer5Img from "../../../../public/images/offer-5.png";
-import offer6Img from "../../../../public/images/offer-6.png";
-import backgroundImg from "../../../../public/images/background-offers.jpg";
+import offer1Img from "@assets/images/offer-1.png";
+import offer2Img from "@assets/images/offer-2.png";
+import offer3Img from "@assets/images/offer-3.png";
+import offer4Img from "@assets/images/offer-4.png";
+import offer5Img from "@assets/images/offer-5.png";
+import offer6Img from "@assets/images/offer-6.png";
+import backgroundImg from "@assets/images/background-offers.jpg";
 import { Divider } from "antd";
 
 function Offers() {

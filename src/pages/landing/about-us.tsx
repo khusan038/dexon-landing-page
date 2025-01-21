@@ -1,10 +1,10 @@
 import { Divider } from "antd";
-import Container from "../../../components/container";
-import { Paragraph, Title } from "../../../components/typography";
-import aboutMainImg from "../../../../public/images/about-main.png";
-import aboutPeopleImg from "../../../../public/images/about-peope.png";
-import backgroundImg from "../../../../public/images/backgrund-about.jpg";
+import aboutMainImg from "@assets/images/about-main.png";
+import aboutPeopleImg from "@assets/images/about-peope.png";
+import backgroundImg from "@assets/images/backgrund-about.jpg";
 import { BsCheck2All } from "react-icons/bs";
+import Container from "@components/container";
+import { Paragraph, Title } from "@components/typography";
 
 function AboutUs() {
   return (

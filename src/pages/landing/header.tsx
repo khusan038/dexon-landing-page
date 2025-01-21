@@ -1,12 +1,12 @@
 import { Drawer } from "antd";
-import Container from "../../../components/container";
+import Container from "@components/container";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
-import { Paragraph } from "../../../components/typography";
-import { StyledButton } from "../../../components/styled-button";
+import { Paragraph } from "@components/typography";
+import { StyledButton } from "@components/styled-button";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);

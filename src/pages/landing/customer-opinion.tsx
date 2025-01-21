@@ -1,8 +1,8 @@
 import { Button, Rate, Space } from "antd";
-import backgroundImg from "../../../../public/images/backgournd-customer-opinion.jpg";
-import Container from "../../../components/container";
-import { Paragraph, Title } from "../../../components/typography";
-import { StyledCard } from "../../../components/styled-card";
+import backgroundImg from "@assets/images/backgournd-customer-opinion.jpg";
+import Container from "@components/container";
+import { Paragraph, Title } from "@components/typography";
+import { StyledCard } from "@components/styled-card";
 import { buttonStyled } from "./banner";
 function CustomerOpinion() {
   return (

@@ -1,6 +1,6 @@
 import { MdArrowForward } from "react-icons/md";
-import Container from "../../../components/container";
-import { Paragraph, Title } from "../../../components/typography";
+import Container from "@components/container";
+import { Paragraph, Title } from "@components/typography";
 import styled from "@emotion/styled";
 import clsx from "clsx";
 import { Button } from "antd";

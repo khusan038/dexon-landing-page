@@ -1,7 +1,7 @@
+import LandingPage from "@layout/landing";
 import { ConfigProvider } from "antd";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Fragment } from "react/jsx-runtime";
-import LandingPage from "./pages/landing";
 
 const routes = createBrowserRouter([
   {

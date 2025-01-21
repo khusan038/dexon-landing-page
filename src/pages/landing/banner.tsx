@@ -1,9 +1,9 @@
-import Container from "../../../components/container";
-import { Paragraph, Title } from "../../../components/typography";
-import image from "../../../../public/images/banner.png";
-import backgraound from "../../../../public/images/background-banner.jpg";
+import Container from "@components/container";
+import { Paragraph, Title } from "@components/typography";
+import image from "@assets/images/banner.png";
+import backgraound from "@assets/images/background-banner.jpg";
 import { Button } from "antd";
-import ScrollIndicator from "../../../components/scroll-progress";
+import ScrollIndicator from "@components/scroll-progress";
 
 function Banner() {
   return (

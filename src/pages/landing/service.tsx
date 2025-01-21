@@ -1,11 +1,11 @@
-import Container from "../../../components/container";
-import { Paragraph, Title } from "../../../components/typography";
-import mainImage from "../../../../public/images/service-main.png";
+import Container from "@components/container";
+import { Paragraph, Title } from "@components/typography";
+import mainImage from "@assets/images/service-main.png";
 import { Button } from "antd";
 import { MdArrowForward } from "react-icons/md";
-import service1Img from "../../../../public/images/service-1.png";
-import service2Img from "../../../../public/images/service-2.png";
-import service3Img from "../../../../public/images/service-3.png";
+import service1Img from "@assets/images/service-1.png";
+import service2Img from "@assets/images/service-2.png";
+import service3Img from "@assets/images/service-3.png";
 
 function Service() {
   return (

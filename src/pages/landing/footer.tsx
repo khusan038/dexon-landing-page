@@ -1,6 +1,6 @@
 import { Button, Divider, Input, Space } from "antd";
-import Container from "../../../components/container";
-import { Paragraph } from "../../../components/typography";
+import Container from "@components/container";
+import { Paragraph } from "@components/typography";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
